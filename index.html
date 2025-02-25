@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroMundo - Seu pedacinho do universo</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark color-bg sticky-top" style="width: 100%;">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo de um site de astronomia.png" width="100" height="90" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-light" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Eventos Astronomicos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Eclipse</a>
+                        <a class="dropdown-item" href="#">Chuva de Meteoro</a>
+                        <a class="dropdown-item" href="#">Conjunções planetárias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Desativado</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <a class="btn btn-dark mx-3 text-light bg-dark">login</a>
+        <a class="btn btn-outline-dark text-light ">Cadastre-se</a>
+    </nav>
+    <main>
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/spiral/Hubble_UGC5460_potw2507a.jpg?w=3732&h=3807&fit=clip&crop=faces%2Cfocalpoint"
+                            height="500" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a class="h3 text-light" href="#">Hubble espia uma espiral que pode estar escondendo um
+                                    impostor</a></h5>
+                            <p>2 min de leitura</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/nebulae/emission/Hubble_LMC_TarantulaNebula_potw2506a.jpg?w=3104&h=3412&fit=clip&crop=faces%2Cfocalpoint"
+                            height="500" alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a class="h3 text-light" href="#">Hubble captura uma paisagem de nuvens cósmicas</a>
+                            </h5>
+                            <p>2 min de leitura</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://www.nasa.gov/wp-content/uploads/2025/02/highvelocityexoplanet-1-ac.jpg"
+                            height="500" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a class="h3 text-light" href="#">Cientistas da NASA detectam candidato a sistema de
+                                    exoplanetas mais rápido</a></h5>
+                            <p>5 min de leitura</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-9">
+                        <h1 class="text-center text-light text-uppercase mt-5">Destaques do Mês</h1>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6 ">
+                                <img src="img/alinhamento.webp" width="100%" height="342" alt="" class="my-3 rounded">
+
+                                <p class="lead text-light ">Alinhamento planetário: como e quando observar o
+                                    fenômeno raro desta
+                                    semana </p><time>23/02/2025</time>
+                                <button type="button" class="btn btn-outline-success d-flex text-center">Ler
+                                    Mais</button>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 ">
+                                <img src="https://th.bing.com/th/id/R.431b3c627e2bcbaa2f1faf7a54e1c2fb?rik=4X834HX6y%2b%2f2Zg&riu=http%3a%2f%2fwww.skyandtelescope.com%2fwp-content%2fuploads%2f2015-09-28_56096c7454e69_leclipse092715.jpg&ehk=wpNaLTEywxb3gr80ojofGFFUYYvBG5aKayC8R4ZdJ9E%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="" class="my-3 rounded" width="100%">
+
+                                <p class="lead text-light">Confira a data do Eclipse lunar total que será <mark><strong>visto de
+                                    todo o
+                                    Brasil</strong> </mark></p><time>24/02/2025</time>
+                                <button type="button" class="btn btn-outline-success d-flex text-center">Ler
+                                    Mais</button>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <img src="https://i.pinimg.com/736x/43/9c/ba/439cba7ccf81c2abde28ea548dbad454.jpg"
+                                    alt="" class="my-3 rounded" width="100%">
+
+                                <p class="lead text-light">Confira a data do Eclipse Solar parcial que poderá
+                                    ser observadodo Brasil
+                                </p><time>01/03/2025</time>
+                                <button type="button" class="btn btn-outline-success d-flex text-center">Ler
+                                    Mais</button>
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <img src="https://i.pinimg.com/736x/43/9c/ba/439cba7ccf81c2abde28ea548dbad454.jpg"
+                                    alt="" class="my-3 mx-auto rounded" width="100%">
+
+                                <p class="lead text-light">Confira a data do Eclipse Solar parcial que poderá ser
+                                    observadodo Brasil
+                                </p><time>01/03/2025</time>
+                                <button type="button" class="btn btn-outline-success d-flex text-center">Ler
+                                    Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 border-left border-ligth">
+                        <h2 class="h5 my-4 text-light text-center text-uppercase">Novas Atualizações</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="#"><img
+                                        src="https://t.ctcdn.com.br/H64F79bkPv-a7hMN1vJc-ebV3pI=/1200x675/smart/i978587.png"
+                                        class="img-fluid" alt=""></a>
+                                <h4 class="h6 text-light">James Webb: maior telescópio da NASA tira foto de berçário
+                                    planetário</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="text-light">&copy; Todos os diretos reservados</p>
+            <ul>
+                <li><a href="https://instagram.com"><img src="img/instagram.png" alt="Istagram"></a></li>
+                <li><a href="https://facebook.com"><img src="img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://x.com"><img src="img/twitter.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+
+</html>
